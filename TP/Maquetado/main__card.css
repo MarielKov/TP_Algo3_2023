@@ -1,0 +1,22 @@
+.container__principal {
+    display: grid;
+    grid-template-columns:0.75fr 4fr;
+    grid-template-rows: 1fr;
+}
+
+
+
+@media (401px <= width <=768px) {
+    .container__principal{
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .container__principal {
+        grid-template-columns: 1fr;
+    }
+ 
+        
+}
