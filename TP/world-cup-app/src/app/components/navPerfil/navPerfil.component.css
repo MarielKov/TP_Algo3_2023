@@ -1,0 +1,41 @@
+.header__perfil {
+    display: grid;
+    background-color: var(--color-text);
+    border-bottom: 1px solid var(--color-secundario);
+    color: var(--color-text-secundario);
+    font-family: var(--fuente-text);
+    height: 5rem;
+    justify-content: space-around;
+    text-decoration: underline;
+}
+
+b {
+    font-size: 1.5em;
+    text-decoration: underline 2px;
+}
+
+@media (max-width: 794px) {
+   
+    .header__perfil__opciones{
+        display: flex;
+    }
+ 
+}
+
+@media (401px <= width <=794px) {
+    .header__perfil__opciones{
+        gap: 5vw;
+    }
+}
+
+@media (max-width: 460px) {
+    .header__perfil{
+        height: auto;
+    }
+    .header__perfil__opciones{
+        flex-direction: column;
+        gap: 1rem;
+        margin: 1rem;
+    }
+
+}

@@ -1,0 +1,176 @@
+.container {
+    grid-template-rows: 5rem;
+    background-color: var(--color-text);
+    font-family: var(--fuente-text);
+}
+
+.aside__perfil{
+    min-height: 100vh;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    padding: 1rem;
+    background-color: var(--color-secundario);
+    color: var(--color-text);
+}
+
+.tamaño__input{
+    width: 90%;
+    display: flex;
+    gap: 1rem;
+    background-color: var(--color-text);
+    border: 0.1rem solid var(--color-tercero);
+    border-radius: 0.5rem;
+    
+}
+
+.input__largo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 95%;
+    display: flex;
+    background-color: var(--color-text);
+      
+}
+
+.input__ancho {
+    margin: 1rem 3rem;
+    max-width: 80rem;
+    background-color: var(--color-text);
+}
+
+.nombre__usuario {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.foto__usuario {
+    border-radius: 50%;
+    width: 100px;
+    margin: 1rem;
+}
+
+.boton__borrar {
+    display: grid;
+    position: absolute;
+    width: min-content;
+    align-self: flex-end;
+    padding: 5px;
+}
+
+.agregar__figurita {
+    display: flex;
+    position: sticky;
+    bottom: 3rem;
+    justify-content: center;
+    justify-self: flex-end;
+    font-size: 4rem;
+    padding: 2rem;
+    margin: 1rem 3rem 3rem 3rem;
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    font-family: var(--fuente-text);
+    background-color: var(--color-tercero);
+}
+
+.header__perfil {
+    display: grid;
+    background-color: var(--color-text);
+    border-bottom: 1px solid var(--color-secundario);
+    color: var(--color-text-secundario);
+    font-family: var(--fuente-text);
+    height: 5rem;
+    justify-content: space-around;
+    text-decoration: underline;
+}
+
+select{
+ color: var(--color-tercero) ;
+    
+}
+
+.perfil__input {
+    display: grid;
+    grid-auto-flow: column;
+    width: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr 2fr;
+    margin: 1rem 3rem;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.perfil__input.criterio {
+    grid-template-rows: 1fr 2fr;
+}
+
+h1 {
+    margin: 1rem;
+}
+
+.texto__input__perfil {
+    color: var(--color-text-secundario);
+    font-size: 1.5em;
+}
+
+.final__pagina {
+    display: grid;
+    justify-self: stretch;
+    grid-template-rows: 100%;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem 0;
+}
+
+.boton__final {
+    width: 8rem;
+    height: 3rem;
+    border-radius: 3px;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.boton__resetear {
+    border-color: 2px var(--color-secundario);
+    background-color: transparent;
+    color: var(--color-secundario);
+    justify-self: flex-end;
+    
+}
+
+.boton__guardar {
+    border: 2px var(--color-secundario);
+    background-color: var(--color-secundario);
+    color: var(--color-text);
+
+}
+
+.boton__final:active {
+    background-color: var(--color-primario);
+    color: var(--color-text)
+}
+
+@media (max-width: 794px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .aside__perfil{
+        min-height: auto;
+        position: relative;
+    }
+}
+
+@media (max-width: 400px) {
+    .perfil__input{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr 2fr);
+    }
+    .perfil__input.ubicacion__geografica {
+        grid-template-rows: repeat(3, 1fr 2fr);
+    }
+    
+    .input__largo{
+        grid-column-end: 2;
+        width: 90%;  
+    }
+}

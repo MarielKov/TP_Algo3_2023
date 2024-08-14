@@ -1,0 +1,12 @@
+<header>
+  <nav class="header-nav">
+    <h1 class="header-title" (click)="navegar('main')">WorldApp</h1>
+    <ul class="container-menu">
+      <li (click)="navegar('busquedadefigus')">Figuritas</li>
+      <li (click)="navegar('busquedadesobres')">Sobres</li>
+      <li (click)="navegar('perfil')">Perfil</li>
+      <i class="fas fa-sign-out-alt icon-logout" (click)="logout()"></i>
+    </ul>
+    <i class="fas fa-solid fa-bars icon-menu"></i>
+  </nav>
+</header>

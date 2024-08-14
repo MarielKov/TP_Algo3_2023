@@ -1,0 +1,249 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css');
+
+:root {
+    /* --color-primario: #00476b; */
+    --color-primario: #4c4c4c;
+    /* --color-secundario: #0bbad9; */
+    --color-secundario: #78c3f1;
+    /* --color-tercero: #f5d880; */
+    --color-tercero: #ffc49d;
+    --color-text: #f5f5f5;
+    --color-text-secundario: #050505;
+    --fuente-titulos: 'Russo One', sans-serif;
+    --fuente-text: 'Bricolage Grotesque', sans-serif;
+
+
+}
+
+* {
+    /* scrollbar-width: none; */
+    scrollbar-color: #82A1D0 #ffffff;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--color-primario);
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+}
+
+html {
+    font-size: 10px;
+
+
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-text);
+    font-family: var(--fuente-titulos);
+    justify-content: space-between;
+}
+
+a {
+    font-family: var(--fuente-text);
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+
+.container-menu {
+    display: flex;
+    align-self: center;
+    gap: 9.5em;
+}
+
+.header-title {
+    margin-left: 2.5rem;
+    color: var(--color-text);
+    text-shadow: 1px 1px 1px var(--color-secundario);
+
+
+}
+
+.header-title:hover,
+a:hover,
+.icon-logout:hover,
+.icon-menu:hover {
+    color: var(--color-tercero);
+    text-shadow: 1px 1px 1px var(--color-tercero);
+    cursor: pointer;
+}
+
+.icon-logout,
+.icon-menu {
+    font-size: 2rem;
+    margin-right: 1.5rem;
+}
+
+.icon-menu {
+    align-self: center;
+}
+
+@media (max-width: 768px) {
+    .container-menu {
+        display: none;
+    }
+
+    *{
+        scrollbar-width: none;
+    }
+
+}
+
+@media (min-width:768px) {
+    .icon-menu {
+        display: none;
+    }
+}
+
+
+.contenedor-footer {
+    background-color: var(--color-primario);
+    display: flex;
+    flex-direction: row;
+    color: var(--color-text);
+    justify-content: center;
+    font-size: 2rem;
+}
+
+strong {
+    font-family: var(--fuente-titulos);
+
+}
+
+.icon {
+    align-self: center;
+    margin-right: 0.5em;
+
+}
+
+footer {
+    margin-top: auto;
+}
+
+/* --------------------- Header----------------------------- */
+.header-nav {
+    display: flex;
+    width: 100%;
+    background-color: var(--color-primario);
+    color: var(--color-text);
+    font-family: var(--fuente-titulos);
+    justify-content: space-between;
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+} 
+
+
+li{
+    list-style: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.container-menu {
+    display: flex;
+    align-self: center;
+    gap: 9.5em;
+}
+
+
+.header-title{
+    margin-left: 2.5rem;
+    color: var(--color-text);
+    text-shadow: 1px 1px 1px var(--color-secundario);
+    font-size: 2em;
+    animation: glowing 5s linear infinite;
+  }
+  
+  @keyframes glowing {
+    0%, 100% {
+      color:  var(--color-tercero);
+      filter: blur(2px);
+    
+    } 5%, 95% {
+      color: #111;
+      text-shadow: 1px;
+      filter: blur(0.5px);
+
+    }
+  }
+
+.header-title:hover,
+li:hover,
+.icon-logout:hover,
+.icon-menu:hover {
+    color: var(--color-tercero);
+    text-shadow: 1px 1px 1px var(--color-tercero);
+    cursor: pointer;
+}
+
+.icon-logout,
+.icon-menu {
+    font-size: 2rem;
+    margin-right: 1.5rem;
+}
+
+.icon-menu {
+    align-self: center;
+}
+
+
+@media (max-width:767px) {
+
+    .container-menu {
+        display: none;
+    }
+
+    .icon-menu {
+        display: block;
+    }
+}
+
+
+/* ------------------------------- Footer ---------------------------------------- */
+
+
+.contenedor-footer {
+    background-color: var(--color-primario);
+    display: flex;
+    flex-direction: row;
+    color: var(--color-text);
+    justify-content: center;
+    font-size: 2rem;
+}
+
+strong {
+    font-family: var(--fuente-titulos);
+
+}
+
+.icon {
+    align-self: center;
+    margin-right: 0.5em;
+
+}
+
+footer {
+    margin-top: auto;
+
+}

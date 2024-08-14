@@ -1,0 +1,20 @@
+<body>
+  <form class="form--card">
+    <div class = "form__titulo">
+      <h1>WorldCApp</h1>
+    </div>
+    <div class = "form__subtitulo">Usuario</div>
+    <label class="form__fila">
+      <i class="fas fa-user-alt icono" ></i>
+      <input class="form__input--full" [(ngModel)]="username">
+    </label>
+    <div class = "form__subtitulo">Contraseña</div> 
+    <label class="form__fila">
+      <i class="fas fa-key icono"></i>
+      <input class="form__input--full" [(ngModel)]="password"/>
+    </label>
+    <div class="form__boton">
+      <button class="form__boton--primario" (click)="intentoLogin()">Ingresar</button>
+    </div>
+  </form>
+</body>

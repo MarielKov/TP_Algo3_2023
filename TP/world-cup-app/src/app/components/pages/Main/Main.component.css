@@ -1,0 +1,30 @@
+.container__principal {
+    display: grid;
+    grid-template-columns:0.75fr 4fr;
+    grid-template-rows: 1fr;
+}
+
+.container__card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(29em, 1fr));
+    gap: 3em;
+    padding-right: 3em;
+    padding-bottom: 3em;
+    place-items: center;
+  }
+
+
+@media (401px <= width <=768px) {
+    .container__principal{
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .container__principal {
+        grid-template-columns: 1fr;
+    }
+ 
+        
+}

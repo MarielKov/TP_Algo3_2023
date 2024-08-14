@@ -1,0 +1,80 @@
+<app-header></app-header>
+<main class="card-detalle">
+    <div class="contenedor-detalle">
+        <header class="detalle-propiedad">
+        <div class="nombreypropietaria">
+            <strong class="detalle-nombrefigu"><!--{{cardElegida.nombreJugadorCard}}--></strong>
+            <div class="detalle-dueñofigu"><!--{{cardElegida.nombreDuenoCard}}--></div>
+        </div>
+            <div class="detalle-coleccion">
+                    <i class="fa-sharp fa-solid fa-fire-flame-curved" style="color: #ff0000;"></i>
+                    <i class="fa-solid fa-clipboard-user" style="color: #050505;"></i>
+                    <strong><!--{{cardElegida.numeroJugadorCard}}--></strong>
+            </div>
+        </header>
+        <section class="detalles-propiedades-card">
+            <div class="detalle-foto">
+                <img src="../assets/messi_v2.jpg" alt="" />
+            </div>
+            <div class="detalles-card">
+
+                <div class = "detalle-pesoaltnac">
+                    
+                    <div class="espacio">
+                    <strong><i class="fa-solid fa-weight-scale"></i> Peso</strong>
+                    <!--{{cardElegida.pesoJugadorCard}}--></div>
+                    <div class="espacio">
+                    <strong><i class="fa-solid fa-person-arrow-up-from-line icon_color"></i> Altura</strong>
+                    <!--{{cardElegida.alturaJugadorCard}}--></div>
+                    <div class="espacio_nacimiento">
+                    <strong> Nacimiento </strong>
+                    <!--{{cardElegida.nacimientoJugadorCard}}--></div>
+
+
+                </div>
+
+
+                <div class = "detalle-vida">
+                    
+                    <div class="espacio">
+                        <strong>Casaca</strong> <!--{{cardElegida.casacaJugadorCard}}-->
+                    </div>
+                        <div class="espacio">
+                        <strong>Seleccion</strong> <!--{{cardElegida.seleccionJugadorCard}}-->(<i class="fa-solid fa-trophy"></i><!--{{cardElegida.copasJugadorCard}}-->)</div>
+                        <div class="espacio">
+                        <strong>Año debut</strong>
+                        <!--{{cardElegida.debutJugadorCard}}--></div>
+                        <div class="espacio"><!--{{cardElegida.organizacionJugadorCard}}-->(<i class="fa-solid fa-trophy"></i><!--{{cardElegida.cantTitulosJugadorCard}}-->)</div>
+                        <div class="espacio">
+                        <strong>Posicion</strong>
+                        <!--{{cardElegida.PosicionJugadorCard}}--></div>
+                        <div class="espacio"><strong><!--{{cardElegida.esLiderJugadorCard}}--></strong></div>
+                        
+
+
+                </div>
+                <div class="detalle-cotizacion">
+                    <strong>Cotizacion USD <!--{{cardElegida.cotizacionJugadorCard}}--></strong>
+                </div>
+            </div>
+
+        </section>
+        <section class="valores-detalles">
+            <div class="valores-detalles_numero"> 
+                <div class="medida">
+            <strong>Nivel de impresion </strong> <!--{{cardElegida.nivelImpresionJugadorCard}}-->
+        </div>
+        <div class="medida">
+            <strong>Valoracion Base </strong> <!--{{cardElegida.valoracionBaseJugadorCard}}-->
+        </div>
+        <div class="medida centrado-horizontal">
+            <strong>Valoracion Total </strong> <!--{{cardElegida.valoracionTotalJugadorCard}}-->
+        </div>
+    </div>
+        <div class="botones">
+        <button class="volver" (click)="navegarAMain()">Volver</button>
+        <button class="volver solicitar" (click)="navegarAMain()">Solicitar</button>
+        </div>
+    </section>
+    </div>
+</main>

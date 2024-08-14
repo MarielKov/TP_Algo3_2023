@@ -1,0 +1,21 @@
+footer {
+    margin-top: auto;
+}
+
+.contenedor-footer {
+    background-color: var(--color-primario);
+    display: flex;
+    flex-direction: row;
+    color: var(--color-text);
+    justify-content: center;
+    font-size: 2rem;
+}
+
+strong {
+    font-family: var(--fuente-titulos);
+}
+
+.icon {
+    align-self: center;
+    margin-right: 0.5em;
+}

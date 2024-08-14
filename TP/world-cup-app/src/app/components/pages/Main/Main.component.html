@@ -1,0 +1,8 @@
+<app-header></app-header>
+<app-busqueda></app-busqueda>
+<div class="container__principal">
+    <app-filtros></app-filtros>
+    <main class="container__card">
+      <app-cards [esCedidaPor]="esCedida" *ngFor="let i of [1,2,3,4,5]"></app-cards>          
+    </main>
+</div>

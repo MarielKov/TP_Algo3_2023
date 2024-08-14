@@ -1,0 +1,16 @@
+
+<body>
+
+    <app-header></app-header>
+    <app-busqueda></app-busqueda>
+
+    <div class="container__principal">
+        
+        <app-filtroRadio></app-filtroRadio> 
+
+        <main class="card-container">
+            <app-cardsTienda *ngFor="let i of [1,2,3,4,5]"></app-cardsTienda>
+        </main>
+
+    </div>
+</body>

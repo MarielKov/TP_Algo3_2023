@@ -1,0 +1,60 @@
+<app-header />
+<main class="container container__principal">
+
+    <app-aside class="aside__perfil" />
+    <app-navPerfil />
+    <div class="input__ancho">
+        <main class="input__card">
+            <h1 class="texto__fuente_label input__largo">Información general</h1>
+            <form class="perfil__input">
+                <label class="texto__input__perfil texto__fuente_label  texto__subtitulo"> Nombre </label>
+                <input type="text" placeholder="placeholder" class="tamaño__input input__info" />
+                <label class="texto__input__perfil texto__fuente_label  texto__subtitulo"> Apellido </label>
+                <input type="text" placeholder="placeholder" class="tamaño__input input__info" />
+                <label class="texto__input__perfil texto__fuente_label texto__subtitulo"> Correo Electronico </label>
+                <input type="text" placeholder="placeholder" class="tamaño__input input__info" />
+                <label class="texto__input__perfil texto__fuente_label  texto__subtitulo"> Fecha de Nacimiento </label>
+                <input type="text" placeholder="16/03/1938" class="tamaño__input input__info" />
+            </form>
+
+            <h1 class="texto__fuente_label input__largo">Dirección</h1>
+            <form class="perfil__input">
+                <label class="texto__input__perfil texto__fuente_label  texto__subtitulo"> Provincia </label>
+                <select class="tamaño__input input__info"></select>
+                <label class="texto__input__perfil texto__fuente_label  texto__subtitulo"> Localidad </label>
+                <select class="tamaño__input input__info"></select>
+                <label class="texto__input__perfil texto__fuente_label  texto__subtitulo"> Calle </label>
+                <input type="text" placeholder="placeholder" class="tamaño__input input__info" />
+                <label class="texto__input__perfil texto__fuente_label  texto__subtitulo"> Altura </label>
+                <input type="text" placeholder="placeholder" class="tamaño__input input__info" />
+            </form>
+
+            <h1 class="texto__fuente_label input__largo">Ubicación geográfica</h1>
+            <form class="perfil__input ubicacion__geografica">
+                <label class="texto__input__perfil texto__fuente_label  texto__subtitulo"> Posicion X </label>
+                <input type="text" placeholder="placeholder" class="tamaño__input input__info" />
+                <label class="texto__input__perfil texto__fuente_label  texto__subtitulo"> Posicion Y </label>
+                <input type="text" placeholder="placeholder" class="tamaño__input input__info" />
+                <label class="texto__input__perfil texto__fuente_label input__largo texto__subtitulo"> Distancia Máxima
+                    de Cercanía </label>
+                <input type="text" placeholder="placeholder" class="tamaño__input input__largo " />
+            </form>
+
+            <h1 class="texto__fuente_label input__largo">Criterio para el cambio</h1>
+            <form class="perfil__input criterio">
+                <label class="texto__input__perfil texto__fuente_label texto__subtitulo"> Criterio </label>
+                <select class="tamaño__input input__info"></select>
+            </form>
+        </main>
+
+        <div class="final__pagina">
+            <button class="texto__fuente_label boton__resetear boton__final">
+                Resetear
+            </button>
+            <button class="texto__fuente_label boton__guardar boton__final">
+                Guardar
+            </button>
+        </div>
+    </div>
+
+</main>

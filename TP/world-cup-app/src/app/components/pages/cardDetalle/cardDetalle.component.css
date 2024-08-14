@@ -1,0 +1,314 @@
+.contenedor-detalle{
+    display: grid;
+    grid-template-rows:0.75fr 4fr 2fr;
+    width: 75em;
+    border: 0.1em solid black;
+    border-radius: 0.7rem;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-detalle{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 47rem;
+}
+
+.detalle-nombrefigu{
+    font-size: 2.3rem;
+    margin-left: 0.5rem;
+}
+
+.nombreypropietaria{
+    display:flex;
+    flex-direction: row;
+}
+
+.detalle-dueñofigu{
+    display:flex;
+    align-items: flex-end;
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    font-family: var(--fuente-text);
+}
+
+.detalle-coleccion{
+    margin-right: 0.5rem;
+    font-size: 2rem;
+    width: 6rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.detalle-propiedad{
+    background-color: var(--color-tercero);
+    color: var(--color-primario);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;
+}
+
+.detalles-card{
+    width: 60%;
+    display: grid;
+    grid-template-rows:0.4fr 0.6fr 0.3fr;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.detalle-pesoaltnac{
+    grid-row: 1/2  ;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    justify-content: center;
+}
+
+.detalle-vida{
+    grid-row: 2/3;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.detalles-propiedades-card{
+    background-color: var(--color-text);
+    display: flex;
+    flex-direction: row;
+}
+
+.detalle-foto img{
+    background-color: var(--color-text);
+    padding: 0.5rem;
+    border-radius: 1.7rem;
+    width: 30rem;
+    height: 25rem;
+}
+
+.detalle-cotizacion{
+    grid-row: 3/4 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+} 
+
+ .valores-detalles{
+    border-top: 0.1em solid black;
+    background-color: var(--color-text);
+    display: grid;
+    grid-template-rows:2fr 1.5fr ;
+    border-bottom-left-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+    font-size: 1.5rem;
+}
+
+.valores-detalles_numero{
+    grid-row: 1/2;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.medida{
+    width: 37rem;
+    display: flex;
+    align-items: center;
+    margin-left: 0.4rem;
+    font-family: var(--fuente-text);
+    gap: 0.4rem
+}
+
+.centrado-horizontal{
+    display: flex;
+    justify-content: center;
+}
+
+strong{
+    font-weight: inherit;
+}
+
+.botones{
+    grid-row: 2/3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.volver{
+    width: 7rem;
+    height: 3.5rem;
+}
+
+.solicitar{
+    background-color: var(--color-tercero);
+    border-radius: 0.5rem;
+}
+
+.espacio{
+    margin-left: 0.4rem;
+    font-family: var(--fuente-text);
+    width: 21rem;
+}
+
+.espacio_nacimiento{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0.4rem;
+    font-family: var(--fuente-text);
+    gap: 0.5rem;
+}
+
+@media (min-width:471px) and (max-width: 768px) {
+    
+    .contenedor-detalle{
+        grid-template-rows: 0.75fr 7fr 3fr;
+        margin-left: 0.5rem;
+        margin: 4% ;
+    }
+
+    .card-detalle {
+        width: 100%;
+        height: 100%;
+    }
+
+    .detalles-card {
+        width: 48rem;
+    }
+
+    .detalle-foto img {
+        width: 95%;
+        height: 29rem;
+        object-fit: cover;
+    }
+
+    .espacio {
+        width: 48%;
+    }
+
+    .medida {
+        width: 48%;
+    }
+
+    .valores-detalles {
+        grid-template-rows: 2fr 1.5fr;
+    }
+
+    .detalle-dueñofigu {
+        font-size: 1.5rem;
+    }
+
+
+}
+
+@media (max-width:470px) {
+
+    .card-detalle {
+        height: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .detalle-propiedad {
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 0;
+    }
+
+    .nombreypropietaria {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+
+    .detalle-nombrefigu {
+        font-size: 4rem;
+    }
+
+    .detalle-dueñofigu {
+        font-size: 3rem;
+    }
+
+    .detalle-coleccion {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+        width: 9rem;
+    }
+
+    .detalles-propiedades-card {
+        flex-direction: column;
+    }
+
+    .detalle-foto img {
+        width: 97%;
+        height: 100%;
+    }
+
+    .detalles-card {
+        grid-template-rows: 1fr 2fr 1fr;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .detalle-pesoaltnac {
+        justify-content: flex-start;
+    }
+
+    .espacio {
+        margin:0.5rem;
+        width: 100%;
+        font-size: 1.7rem;
+    }
+
+    .espacio_nacimiento{
+        font-size: 1.7rem;
+    }
+
+    .valores-detalles_numero {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .centrado-horizontal {
+        justify-content: flex-start;
+    }
+
+    .contenedor-detalle{
+        margin-top: 6.2rem;
+        min-width: 315px;
+    }
+
+    .medida {
+        
+        margin-left: 0.5rem;
+        margin-top: 1rem;
+        width: 100%;
+        height: 2.8rem;
+    }
+
+    .valores-detalles {
+        grid-template-rows: 0.4fr 0.4fr;
+        font-size: 1.8rem;
+        border-radius: 0;
+    }
+
+    .volver {
+        width: 12rem;
+        height: 5.5rem;
+    }
+
+    .header-nav {
+        position: fixed;
+    }
+
+}
